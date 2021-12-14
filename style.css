@@ -71,3 +71,7 @@ body {
 .inputBox #btn:active {
  background: #000000;
 }
+
+.toastify {
+  background-image: unset;
+}

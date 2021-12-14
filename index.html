@@ -7,8 +7,10 @@
  <link rel="preconnect" href="https://fonts.googleapis.com">
  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,300&display=swap" rel="stylesheet">
+ <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
  <link rel="stylesheet" href="style.css">
  <script src="script.js"></script>
+ <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
  <title>Get a safe password!</title>
 </head>
 <body>
@@ -16,8 +18,8 @@
  <div class="inputBox">
   <h2>Generate a <span>safe</span> password. It's important.</h2>
 
-  <input type="text" name="password-box" placeholder="New Password" id="password">
-   <div id="btn" onclick="getPassword()">
+  <input type="text" name="password-box" placeholder="New Password" id="password" onclick="copy()">
+   <div id="btn" onclick="newPassword()">
      Create New Password
    </div>
  
