@@ -16,11 +16,12 @@
 <body>
  
  <div class="inputBox">
-  <h2>Generate a <span>safe</span> password. It's important.</h2>
-
+  <div id="headertext" class="header">
+    <h2>Generate a <span>safe</span> password. It's important.</h2>
+  </div>
   <input type="text" name="password-box" placeholder="New Password" id="password" onclick="copy()">
-   <div id="btn" onclick="newPassword()">
-     Create New Password
+   <div id="btn" onclick="newPassword(); lift()">
+     Generate Password
    </div>
  
  </div>

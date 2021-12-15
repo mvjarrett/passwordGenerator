@@ -7,9 +7,14 @@ function newPassword() {
   password += characters.substring(randomNumber, randomNumber + 1)
  }
  document.getElementById('password').value = password
- 
+ document.getElementById("password").style.visibility = 'visible';
+ document.getElementById("password").style.opacity = '1';
 }
 
+function lift() {
+  let element = document.getElementById("headertext");
+  element.classList.add("raise");
+}
 function copy() {
   navigator.clipboard.writeText(password.value)
   .then(() => {
@@ -17,7 +22,7 @@ function copy() {
       text: "Copied Successfully!",
       duration: 3000,
       style: {
-        background: "linear-gradient(to right, #ae5656, #ad4444)",
+        background: "linear-gradient(to right, #4CAF50, #4CAF50)",
       }
       }).showToast();
   })

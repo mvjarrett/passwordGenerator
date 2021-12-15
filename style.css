@@ -13,6 +13,14 @@ body {
  background: #13334c;
 }
 
+.header {
+ margin-bottom: -100px;
+ transition: margin-bottom 700ms;
+}
+
+.header.raise {
+  margin-bottom: -30px;
+}
 
 .inputBox {
  position: relative;
@@ -22,7 +30,8 @@ body {
 }
 
 .inputBox span{
- color: #ae5656;
+ color: #4CAF50;
+ 
 }
 
 .inputBox h2 {
@@ -32,6 +41,10 @@ body {
 }
 
 .inputBox input {
+ visibility: hidden;
+ opacity: 0;
+ transition: opacity 1000ms;
+ transition-delay: 200ms;
  position: relative;
  text-align: center;
  width: 100%;
