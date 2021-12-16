@@ -6,9 +6,12 @@ function newPassword() {
   let randomNumber = Math.floor(Math.random() * characters.length);
   password += characters.substring(randomNumber, randomNumber + 1)
  }
+ 
+ //refactor this into cleaner design.
  document.getElementById('password').value = password
  document.getElementById("password").style.visibility = 'visible';
  document.getElementById("password").style.opacity = '1';
+ document.getElementById('copyIcon').classList.add('blend')
 }
 
 function lift() {

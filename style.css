@@ -29,6 +29,25 @@ body {
  width: 450px;
 }
 
+i {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1000ms;
+  transition-delay: 200ms;
+  float: left;
+  font-size: 2.3em;
+  position: absolute;
+  margin-top: -15%;
+  margin-left: 65%;
+  display: block;
+  
+}
+
+.blend {
+  opacity: 1;
+  visibility: visible;
+}
+
 .inputBox span{
  color: #4CAF50;
  
